@@ -20,7 +20,17 @@
           appId      : '390216650989239',
           xfbml      : true,
           version    : 'v2.0'
-        });
+      });
+
+      var page_like_or_unlike_callback = function(url, html_element) {
+            console.log("page_like_or_unlike_callback");
+              console.log(url);
+                console.log(html_element);
+            }
+
+            // In your onload handler
+            FB.Event.subscribe('edge.create', page_like_or_unlike_callback);
+            FB.Event.subscribe('edge.remove', page_like_or_unlike_callback);
       };
 
       (function(d, s, id){
@@ -33,7 +43,7 @@
 	</script>
     </head>
 
-    <body>
+    <body background="http://25.media.tumblr.com/2e7d9981e8230b7fcd7802a9e8a3f017/tumblr_mznf57LXV81sh2jovo1_500.gif">
         <h1>CSS font-family</h1>
         <p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
         <p class="sansserif">This is a paragraph, shown in the Arial font.</p>
