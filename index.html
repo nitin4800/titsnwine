@@ -5,53 +5,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="content-language" content="EN" />
         <meta name="description" content="Testing FB API" />
-        <meta property="og:title" content="Testing Shoe" />
-        <meta property="og:description" content="Testing FB API" /> 
-        <meta property="og:image" content="http://upload.wikimedia.org/wikipedia/commons/e/ec/Hush_Puppy_shoe.jpg" />
-        <meta property="og:type" content="cityoffriends:shoe" />
-        <meta property="og:url" content="http://titsnwine.com" />
         <style>
             p.serif{font-family:"Times New Roman",Times,serif;}
             p.sansserif{font-family:Arial,Helvetica,sans-serif;}
         </style>
-	<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '390216650989239',
-          xfbml      : true,
-          version    : 'v2.0'
-      });
-
-      var page_like_or_unlike_callback = function(url, html_element) {
-            console.log("page_like_or_unlike_callback");
-              console.log(url);
-                console.log(html_element);
-            }
-
-            // In your onload handler
-            FB.Event.subscribe('edge.create', page_like_or_unlike_callback);
-            FB.Event.subscribe('edge.remove', page_like_or_unlike_callback);
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-	</script>
     </head>
 
-    <body background="http://25.media.tumblr.com/2e7d9981e8230b7fcd7802a9e8a3f017/tumblr_mznf57LXV81sh2jovo1_500.gif">
+    <body background="/media/tyrion.jpg">
         <h1>CSS font-family</h1>
-        <p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
-        <p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+        <p class="serif">I am the god on tits and wine.</p>
+        <p class="sansserif"></p>
         <script type="text/javascript">
         </script>
-
-
-	<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-
     </body>
 </html>
